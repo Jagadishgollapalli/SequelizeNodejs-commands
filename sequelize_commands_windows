@@ -1,0 +1,5 @@
+npm install sequelize -g
+npx sequelize-cli init
+npm install mysql2 -g 
+npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string,mobile:integer
+npx sequelize-cli db:migrate 
